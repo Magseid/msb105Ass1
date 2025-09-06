@@ -1,0 +1,29 @@
+---
+title: "msb105_ass_1"
+author: "Magnus Eidesmo"
+date: last-modified
+date-format: "dddd D MMM, YYYY"
+csl: apa7.csl
+lang: en-GB
+format:
+  html: default
+  typst:
+    papersize: a4
+  pdf:
+    documentclass: article
+    number-sections: true
+    keep-tex: true
+    papersize: A4
+    fig-pos: "H"
+bibliography: msb105_kilder.bib
+abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
+---
+
+
+[@allaire2024; @grolemundWelcomeDataScience; @wickham2019; @xie2014; @xie2015; @xie2018; @xie2020; @xie2024]
+
+
+# Referanser
+<div id="refs"></div>
+
+
