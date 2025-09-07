@@ -22,8 +22,31 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 [@allaire2024; @grolemundWelcomeDataScience; @wickham2019; @xie2014; @xie2015; @xie2018; @xie2020; @xie2024]
 
+## Introduction
 
-# Referanser
+Scientific research is built on the expectation tha results should be robus and reliable, so that they can be reproduced by other researchers. In resent decades, there has been significant attention on the replication crisis,  particulary within psycholgy, medicine, and the social sciences. Many studies have been shown to fail when repeated, which undermines trust in research. This paper discusses what is meant by robust and reliable science, what threatens it, and which measures may help improve the situasion
+
+What is this paper about?
+What is discussed?
+Why is it of any consequence?
+
+## Literature review
+
+Smart stuff from others about the topic.
+Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file).
+Use both in-line and normal citations.
+
+## Discussion of the reseach question
+
+-   Should replicability be the norm or is this to much to ask for now?
+-   Can Quarto documents help with reproducibility?
+-   What problems remains and how can these be solved?
+
+## Conclusion
+
+
+
+## References
 <div id="refs"></div>
 
 
