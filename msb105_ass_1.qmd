@@ -26,6 +26,9 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 Scientific research is built on the expectation tha results should be robus and reliable, so that they can be reproduced by other researchers. In resent decades, there has been significant attention on the replication crisis,  particulary within psycholgy, medicine, and the social sciences. Many studies have been shown to fail when repeated, which undermines trust in research. This paper discusses what is meant by robust and reliable science, what threatens it, and which measures may help improve the situasion
 
+
+tester om "git push --upstream origin intro" fungerer
+
 What is this paper about?
 What is discussed?
 Why is it of any consequence?
