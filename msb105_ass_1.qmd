@@ -23,25 +23,34 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 ## Introduction
 	
-#What is this paper about? 
-#What is discussed?
-#Why is it of any consequence?
+<!-- #What is this paper about?  -->
+<!-- #What is discussed? -->
+<!-- #Why is it of any consequence? -->
 
-Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Reproduserbarhet og replikerbarhet er to nøkkelbegreper i denne sammenhengen. Reproduserbarhet viser til at en studie kan gjentas med samme data og metoder og gi identiske resultater, mens replikerbarhet innebærer at en studie kan gjentas med nye data, men med samme metode, og fortsatt gi sammenfallende konklusjoner.[@bollen2015; @jasny2011b]
+Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@ioannidis2005b; @opensciencecollaboration2015]. Dette kan få avorlige følger - fra bortkastede forskningsressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
+
+Denne oppgaven diskuterer hvordan begrepene **reproduserbarhet** og **replikerbarhet** kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
+
+
+
 
 ## Literature review
 
-Smart stuff from others about the topic.
-Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file).
-Use both in-line and normal citations.
+<!-- Smart stuff from others about the topic. -->
+<!-- Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file). -->
+<!-- Use both in-line and normal citations. -->
 
 ## Discussion of the reseach question
 
--   Should replicability be the norm or is this to much to ask for now?
--   Can Quarto documents help with reproducibility?
--   What problems remains and how can these be solved?
+<!-- -   Should replicability be the norm or is this to much to ask for now? -->
+<!-- -   Can Quarto documents help with reproducibility? -->
+<!-- -   What problems remains and how can these be solved? -->
 
 ## Conclusion
+
+
+## References
+<div id="refs"></div>
 
 <!-- ## Notes -->
 
@@ -244,7 +253,6 @@ Use both in-line and normal citations.
 
 
 
-## References
-<div id="refs"></div>
+
 
 

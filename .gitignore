@@ -7,6 +7,8 @@
 *.md
 *.tex
 *.png
+*_files/
+*.bib
 
 # History files
 .Rhistory
