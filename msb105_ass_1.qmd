@@ -33,7 +33,7 @@ Denne oppgaven diskuterer hvordan begrepene **reproduserbarhet** og **replikerba
 
 ## Literature review
 ### Reproduserbarhet og Replikerbarhet
-Reproduserbahet innebærer at andre forskere skal kunne oppnå de samme resultatene som en studie ved å bruke de samme dataene og metodene som er brukt[@bollen2015]. Replikerbarhet går et skritt videre og handler om å oppnå samme konklusjon ved å bruke nye data, men samme metode[@jasny2011b]. 
+Et sentralt skille i forskningsdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metodne, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019 tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *methods reproducibility, results reproducibility* og *robustness/generalizability,* noe som viser at begrepet favner flere nivåer.
 
 
 
