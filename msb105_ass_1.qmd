@@ -35,6 +35,10 @@ Denne oppgaven diskuterer hvordan begrepene **reproduserbarhet** og **replikerba
 ### Reproduserbarhet og Replikerbarhet
 Et sentralt skille i forskningsdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metodne, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019 tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *methods reproducibility, results reproducibility* og *robustness/generalizability,* noe som viser at begrepet favner flere nivåer.
 
+@peng2011 fremhever at reproduserbarhet burde være et minimumskrav for å kunne publisere i beregningsorienterte fag, på grunn av at full replikasjon ofte er urealistisk. @jasny2011b går enda lengre og omtaler replikerbarhet som vitenskapens "gullstandar". Dette støttes videre av @maxwell2015, som viser hvordan manglende replikasjon undergraver fagfeltets kumulative kunnskapsutvikling.
+
+###Publikasjonsbias og falske positive
+
 
 
 <!-- Smart stuff from others about the topic. -->
