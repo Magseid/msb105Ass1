@@ -31,9 +31,6 @@ Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige result
 
 Denne oppgaven diskuterer hvordan begrepene **reproduserbarhet** og **replikerbarhet** kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
 
-
-
-
 ## Literature review
 ### Reproduserbarhet og Replikerbarhet
 Reproduserbahet innebærer at andre forskere skal kunne oppnå de samme resultatene som en studie ved å bruke de samme dataene og metodene som er brukt[@bollen2015]. Replikerbarhet går et skritt videre og handler om å oppnå samme konklusjon ved å bruke nye data, men samme metode[@jasny2011b]. 
