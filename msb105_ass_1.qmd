@@ -20,24 +20,33 @@ bibliography:
 - reproducibility1.bib
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
 ---
-
 ## Introduction
-	
 <!-- #What is this paper about?  -->
 <!-- #What is discussed? -->
 <!-- #Why is it of any consequence? -->
 
 Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@ioannidis2005b; @opensciencecollaboration2015]. Dette kan få avorlige følger - fra bortkastede forskningsressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
 
-Denne oppgaven diskuterer hvordan begrepene **reproduserbarhet** og **replikerbarhet** kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
+Denne oppgaven diskuterer hvordan begrepene reproduserbarhet og replikerbarhet kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
 
 ## Literature review
 ### Reproduserbarhet og Replikerbarhet
-Et sentralt skille i forskningsdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metodne, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019 tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *methods reproducibility, results reproducibility* og *robustness/generalizability,* noe som viser at begrepet favner flere nivåer.
+Et sentralt skille i forskningsdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metodne, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019 tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *"methods reproducibility, results reproducibility* og *robustness/generalizability",* noe som viser at begrepet favner flere nivåer.
 
 @peng2011 fremhever at reproduserbarhet burde være et minimumskrav for å kunne publisere i beregningsorienterte fag, på grunn av at full replikasjon ofte er urealistisk. @jasny2011b går enda lengre og omtaler replikerbarhet som vitenskapens "gullstandar". Dette støttes videre av @maxwell2015, som viser hvordan manglende replikasjon undergraver fagfeltets kumulative kunnskapsutvikling.
 
-###Publikasjonsbias og falske positive
+### Publikasjonsbias og falske positive
+Et av de mest gjennomgående problemene for vitenskapens pålitelighet er publikasjonsbias, altså tendensen til at studier med signifikante resultater får prioritet i publiseringsprosessen. Allerede på 70-tallet beskrev @rosenthal1979 dette som *"file drawer problem"*, hvor nullresultater forblir liggende upublisert i forskerens skuff. Konsekvensene av dette er at den vitenskapelige litteraturen gir en overdrevent positivt bilde av forskningsfeltet.
+
+Denne skjevheten forsterkes av hvordan analyser faktisk gjennomføres. @simmons2011 viste hvordan forskere gjennom små justeringer i analysevalg - såkalt "p-hacking" - kan produsere tilsynelatende robuste funn som i virkeligheten er falske positive. Når slike resultater først blir publisert, blir de sjeldent korrigert, fordi nullrtesultater ofte ikke finner veien inn i disse prestisjetidsskriftene.
+
+Meta-analyser, som har som mål å gi et samlet bilde av forskningsstatus, rammes derfor også av dette. som @young2008 påpeker, bygger de på den publisserte litteraturen, og blir derfor indirekte farget av publikasjonsbias. Nyere analyser viser at problemet har tiltalt: @fanelli2012 dokumenterer en tydelig nedgang i andelen nullfunn på tvers av fagfelt og land, noe som bekrefter en systematisk skjevhet mot positve resultater.
+
+Denne dynamikken har strukturelle årsaker. @smaldino2016 argumenterer for at dagens insentivsystemer i realiteten fremmer "dårlig vitenskap": Forsknere blir i større grad belønnet for kvantiteten av signifikante funn enn for metodisk grundighet eller vilje til å replikere tidligere resultater. Dermed blir publikasjonsbias ikke bare en konsekvens av individuelle valg, men et mønster som formes av selve forskningssystemets belønningsmekanismer.
+
+### Empirisk dokumentasjon av problemet
+
+
 
 
 
