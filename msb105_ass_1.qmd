@@ -4,7 +4,7 @@ author: "Magnus Eidesmo"
 date: last-modified
 date-format: "dddd D MMM, YYYY"
 csl: apa7.csl
-lang: en-GB
+lang: nb-NO
 format:
   html: default
   typst:
@@ -21,268 +21,56 @@ bibliography:
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
 ---
 ## Introduction
-<!-- #What is this paper about?  -->
-<!-- #What is discussed? -->
-<!-- #Why is it of any consequence? -->
-
-Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@ioannidis2005b; @opensciencecollaboration2015]. Dette kan få avorlige følger - fra bortkastede forskningsressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
+Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@ioannidis2005b; @opensciencecollaboration2015]. Dette kan få alvorlige følger - fra bortkastede forskningressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
 
 Denne oppgaven diskuterer hvordan begrepene reproduserbarhet og replikerbarhet kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
 
 ## Literature review
 ### Reproduserbarhet og Replikerbarhet
-<<<<<<< HEAD
-Reproduserbahet innebærer at andre forskere skal kunne oppnå de samme resultatene som en studie ved å bruke de samme dataene og metodene som er brukt[@bollen2015]. Replikerbarhet går et videre og handler om å oppnå samme konklusjon ved å bruke nye data, men samme metode[@jasny2011b].
-=======
-Et sentralt skille i forskningsdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metodne, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019a tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *"methods reproducibility, results reproducibility* og *robustness/generalizability",* noe som viser at begrepet favner flere nivåer.
+Et sentralt skille i forskningdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metoden, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019a tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *"methods reproducibility, results reproducibility* og *robustness/generalizability",* noe som viser at begrepet favner flere nivåer.
 
-@peng2011 fremhever at reproduserbarhet burde være et minimumskrav for å kunne publisere i beregningsorienterte fag, på grunn av at full replikasjon ofte er urealistisk. @jasny2011b går enda lengre og omtaler replikerbarhet som vitenskapens "gullstandar". Dette støttes videre av @maxwell2015a , som viser hvordan manglende replikasjon undergraver fagfeltets kumulative kunnskapsutvikling.
+@peng2011 fremhever at reproduserbarhet burde være et minimumskrav for å kunne publisere i beregningsorienterte fag, på grunn av at full replikasjon ofte er urealistisk. @jasny2011b går enda lengre og omtaler replikerbarhet som vitenskapens "gullstandard". Dette støttes videre av @maxwell2015a , som viser hvordan manglende replikasjon undergraver fagfeltets kumulative kunnskapsutvikling.
 
 ### Publikasjonsbias og falske positive
 Et av de mest gjennomgående problemene for vitenskapens pålitelighet er publikasjonsbias, altså tendensen til at studier med signifikante resultater får prioritet i publiseringsprosessen. Allerede på 70-tallet beskrev @rosenthal1979 dette som *"file drawer problem"*, hvor nullresultater forblir liggende upublisert i forskerens skuff. Konsekvensene av dette er at den vitenskapelige litteraturen gir en overdrevent positivt bilde av forskningsfeltet.
 
-Denne skjevheten forsterkes av hvordan analyser faktisk gjennomføres. @simmons2011 viste hvordan forskere gjennom små justeringer i analysevalg - såkalt "p-hacking" - kan produsere tilsynelatende robuste funn som i virkeligheten er falske positive. Når slike resultater først blir publisert, blir de sjeldent korrigert, fordi nullrtesultater ofte ikke finner veien inn i disse prestisjetidsskriftene.
+Denne skjevheten forsterkes av hvordan analyser faktisk gjennomføres. @simmons2011 viste hvordan forskere gjennom små justeringer i analysevalg - såkalt "p-hacking" - kan produsere tilsynelatende robuste funn som i virkeligheten er falske positive. Når slike resultater først blir publisert, blir de sjeldent korrigert, fordi nullresultater ofte ikke finner veien inn i disse prestisjetidsskriftene.
 
-Meta-analyser, som har som mål å gi et samlet bilde av forskningsstatus, rammes derfor også av dette. som @young2008 påpeker, bygger de på den publisserte litteraturen, og blir derfor indirekte farget av publikasjonsbias. Nyere analyser viser at problemet har tiltalt: @fanelli2012a dokumenterer en tydelig nedgang i andelen nullfunn på tvers av fagfelt og land, noe som bekrefter en systematisk skjevhet mot positve resultater.
+Meta-analyser, som har som mål å gi et samlet bilde av forskningstatus, rammes derfor også av dette. som @young2008 påpeker, bygger de på den publiserte litteraturen, og blir derfor indirekte farget av publikasjonsbias. Nyere analyser viser at problemet har tiltalt: @fanelli2012a dokumenterer en tydelig nedgang i andelen nullfunn på tvers av fagfelt og land, noe som bekrefter en systematisk skjevhet mot positive resultater.
 
-Denne dynamikken har strukturelle årsaker. @smaldino2016a argumenterer for at dagens insentivsystemer i realiteten fremmer "dårlig vitenskap": Forsknere blir i større grad belønnet for kvantiteten av signifikante funn enn for metodisk grundighet eller vilje til å replikere tidligere resultater. Dermed blir publikasjonsbias ikke bare en konsekvens av individuelle valg, men et mønster som formes av selve forskningssystemets belønningsmekanismer.
+Denne dynamikken har strukturelle årsaker. @smaldino2016a argumenterer for at dagens incentivsystemer i realiteten fremmer "dårlig vitenskap": Forskere blir i større grad belønnet for kvantiteten av signifikante funn enn for metodisk grundighet eller vilje til å replikere tidligere resultater. Dermed blir publikasjonsbias ikke bare en konsekvens av individuelle valg, men et mønster som formes av selve forsknings-systemets belønningmekanismer.
 
 ### Dokumenterte funn om replikasjon
-@ioannidis2005b argumenterte tidlig for at majoriteten av publiserte forskningsfunn sannsyneligvis er falske, basert på metododiske svakheter, lav statistisk styrke og bias. Denne bekymringen ble senere empirisk dokumentert gjennom @opensciencecollaboration2015b, som forsøkte å replikere 100 psykologiske studier. Av disse studiene var det kun 36% som ga signifikante resultater, og effektstørrelsen var betydelig redusert. @nosek2015 understøtter disse funnene og peker på at mangel på transparens og deling av data er sentrale årsaker.
+@ioannidis2005b argumenterte tidlig for at majoriteten av publiserte forskningsfunn sannsynligvis er falske, basert på metodiske svakheter, lav statistisk styrke og bias. Denne bekymringen ble senere empirisk dokumentert gjennom @opensciencecollaboration2015b, som forsøkte å replikere 100 psykologiske studier. Av disse studiene var det kun 36% som ga signifikante resultater, og effektstørrelsen var betydelig redusert. @nosek2015 understøtter disse funnene og peker på at mangel på transparens og deling av data er sentrale årsaker.
 
-@klein2018b gjennomførte "Many Labs 2" prosjektet, hvor 28 klassiske og nyere psykologiske funn ble forsøkt replikertr på tvers av ulike utvalg og settinger. Resultatene viste at bare litt over halvparten av forsøkene resulterte i signifikante effekter i samme retnings som den orginale studien. Dette viser at selv når funn kan bekreftes, fremstår de ofte som svakere enn først rapportert.
+@klein2018b gjennomførte "Many Labs 2" prosjektet, hvor 28 klassiske og nyere psykologiske funn ble forsøkt replikert på tvers av ulike utvalg og settinger. Resultatene viste at bare litt over halvparten av forsøkene resulterte i signifikante effekter i samme retning som den originale studien. Dette viser at selv når funn kan bekreftes, fremstår de ofte som svakere enn først rapportert.
 
-@camerer2018 fant lignene mønstre i sin evaluering av 21 samfunnsvitnskapelige eksperimener publisert i *Nature* og *Science* mellom 2010 og 2015. Omtrent 62% av studiene kunne replikeres, men effektene var i snitt om lag 50% mindre enn i de opprinnelige artiklene. Disse resultatene er særlig oppsiktsvekkende ettersom at de gjelder studier fra de mest prestisjetunge tidsskriftene. Når selv forsknings som setter standarden for kvalitet og innflytelse viser begrenset replikerbarhet, understrekes alvoret i utfordingen for vitenskapelig pålitelighet.
+@camerer2018 fant lignene mønstre i sin evaluering av 21 samfunnsvitenskapelige eksperimenter publisert i *Nature* og *Science* mellom 2010 og 2015. Omtrent 62% av studiene kunne replikeres, men effektene var i snitt om lag 50% mindre enn i de opprinnelige artiklene. Disse resultatene er særlig oppsiktsvekkende ettersom at de gjelder studier fra de mest prestisjetunge tidsskriftene. Når selv forsknings som setter standarden for kvalitet og innflytelse viser begrenset replikerbarhet, understrekes alvoret i utfordringen for vitenskapelig pålitelighet.
 
-Innen økonomi viste JMCB-prosjektet på 1980-tallet at bare 2 av 70 analyser kunne reproduseres fullt ut [@dewald1986b]. @mccullough2008a viste senere at selv tidsskrifter med dataarikiv ikke nødvendigvis ikke oppnår reproduserbarhet, fordi forfattere ofte leverer mangelfull kode og dokumentasjon. Dette peker på at tekniske løsninger som dataarkiv ikke er tilstrekkelie alene.
+Innen økonomi viste JMCB-prosjektet på 1980-tallet at bare 2 av 70 analyser kunne reproduseres fullt ut [@dewald1986b]. @mccullough2008a viste senere at selv tidsskrifter med dataarkiv ikke nødvendigvis ikke oppnår reproduserbarhet, fordi forfattere ofte leverer mangelfull kode og dokumentasjon. Dette peker på at tekniske løsninger som dataarkiv ikke er tilstrekkelige alene.
 
 ### Løsninger: Åpen vitenskap og tekniske rammeverk
-For å møte disse utfordringene med lav reproduserbarhet og replikerbarhet er det foreslått en rekke tiltaltak. Open science-initiativer, som preregistreing og obligatorisk deling av data og kode, er blant de mest utbredte [@nosek2015]. @dudda viser i en bred kartlegging at ulike intervasjoner er tatt i bruk, men at kunnskapsgrunnlaget for hvor effektive de faktisk er, fortsatt er begrenset. @chakravorti2025 peker samtidig på at oppfatningen av hva reproduserbarhet innebærer varierer betydelig mellom land og fagfelt, og at både insentiver og ressurstilgang gjør enhetlige standarder vanskelig å etablere.
+For å møte disse utfordringene med lav reproduserbarhet og replikerbarhet er det foreslått en rekke tiltak. Open science-initiativer, som preregistreing og obligatorisk deling av data og kode, er blant de mest utbredte [@nosek2015]. @dudda viser i en bred kartlegging at ulike intervensjoner er tatt i bruk, men at kunnskapsgrunnlaget for hvor effektive de faktisk er, fortsatt er begrenset. @chakravorti2025 peker samtidig på at oppfatningen av hva reproduserbarhet innebærer varierer betydelig mellom land og fagfelt, og at både incentiver og ressurstilgang gjør enhetlige standarder vanskelig å etablere.
 
-På den tekniske siden har et konseptet *computable documents* hatt stor innflytelse. Allerede på 1980-tallet introduserte @knuth1984b ideen om *literate programming*, hvor kode og forklarende tekst integreres for å gjøre programmer mer forståerlige og vedlikeholdbare. Denne tankegangen ble viderført av @gentleman2007b, som lanserte ideen om *compendia* og *dynamic documents* - rammeverk som gjør det mulig å samle kode, data og beskrivelser i en helhetlig enhet for å sikre transparens.
+På den tekniske siden har et konseptet *computable documents* hatt stor innflytelse. Allerede på 1980-tallet introduserte @knuth1984b ideen om *literate programming*, hvor kode og forklarende tekst integreres for å gjøre programmer mer forståelige og vedlikeholdbare. Denne tankegangen ble videreført av @gentleman2007b, som lanserte ideen om *compendia* og *dynamic documents* - rammeverk som gjør det mulig å samle kode, data og beskrivelser i en helhetlig enhet for å sikre transparens.
 
-Slike ideer ble etterhvert gjort praktiske gjennom verktøy som sweave [@leisch2002], knitr [@xie2014b] og R Markdown [@allaire2020b], som åpnet for at analyser og tekst kunne integreres i ett dynamisk dokument. Quarto [@allaire2024a] representerer den nyeste videreutviklingen, med støtte for flere programmeringsspråk og formater, samt innebygget håndtering av referanser. I følge @ziemann2023 bygger beregningsreproduserbahet på fem sentrale "søyler": åpen datadeling, kodedeling, dokumentasjon, standardisering og bruk av åpne plattformer. Dette er prinsipper som verktøy som Quarto i stor grad kan understøtte.
-<!-- Smart stuff from others about the topic. -->
-<!-- Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file). -->
-<!-- Use both in-line and normal citations. -->
+Slike ideer ble etterhvert gjort praktiske gjennom verktøy som Sweave [@leisch2002], knitr [@xie2014b] og R Markdown [@allaire2020b], som åpnet for at analyser og tekst kunne integreres i ett dynamisk dokument. Quarto [@allaire2024a] representerer den nyeste videreutviklingen, med støtte for flere programmeringsspråk og formater, samt innebygget håndtering av referanser. I følge @ziemann2023 bygger beregningsreproduserbarhet på fem sentrale "søyler": åpen datadeling, kodedeling, dokumentasjon, standardisering og bruk av åpne plattformer. Dette er prinsipper som verktøy som Quarto i stor grad kan understøtte.
 
 ## Diskusjon av forskningsspørsmål
-Replikerbarhet løftes ofte fram som vitenskapens gullstandard [@jasny2011b]. Likevel er det urealistisk å gjøre replikerbarhet til normen i alle fagfelt, gitt kostnadene og mangel på insentiver. Flere har derfor foreslått å se på reproduserbarhet som et minimumskravfor publisering, mens replikerbarhet forbeholdes studier med særlig stor betydning [@maxwell2015a; @peng2011].
+Replikerbarhet løftes ofte fram som vitenskapens gullstandard [@jasny2011b]. Likevel er det urealistisk å gjøre replikerbarhet til normen i alle fagfelt, gitt kostnadene og mangel på incentiver. Flere har derfor foreslått å se på reproduserbarhet som et minimumskrav for publisering, mens replikerbarhet forbeholdes studier med særlig stor betydning [@maxwell2015a; @peng2011].
 
 Quarto kan spille kan spille en viktig rolle i å styrke reproduserbarhet ved å kombinere tekst, kode, data og referanser i ett dokument. Dette gir en mer transparent arbeidsflyt og gjør analyser lettere å etterprøve.
 
-Samtidig gjenstår flere utfordringer. Insentivsystemet i akademia belønner først og fremst nye og signifikante funn, noe som svekker motivasjonen for replikasjonsstudier [@simmons2011; @smaldino2016a]. I tillegg viser @chakravorti2025 at forståelsen av reproduserbarhet varier mellom kntekster, noe som gjår at standardisering kan være krevende.
-
-<!-- -   Should replicability be the norm or is this to much to ask for now? -->
-<!-- -   Can Quarto documents help with reproducibility? -->
-<!-- -   What problems remains and how can these be solved? -->
+Samtidig gjenstår flere utfordringer. Incentivsystemet i akademia belønner først og fremst nye og signifikante funn, noe som svekker motivasjonen for replikasjonsstudier [@simmons2011; @smaldino2016a]. I tillegg viser @chakravorti2025 at forståelsen av reproduserbarhet varier mellom kontekster, noe som gjør at standardisering kan være krevende.
 
 ## Konklusjon
 Reproduserbarhet og replikerbarhet er avgjørende for vitenskapens troverdighet. Et realistisk mål er å gjøre reproduserbarhet til publikasjonskrav, mens replikasjon oppmuntres i utvalgte tilfeller.
 
-Tekniske rammverks som Quarto kan bidra til mer transparente og etterprøvbare arbeidsprosesser, men de må kombineres med insentiver og opplæring for å få en reel effekt. Initiativer innen åpen vitenskap og nye verktøy peker i riktig retning [@dudda; @nosek2015], men det gjenstår et betydelig arbeid for å etablere en forkningskultur som er både robust og pålitelig.
+Tekniske rammeverk som Quarto kan bidra til mer transparente og etterprøvbare arbeidsprosesser, men de må kombineres med incentiver og opplæring for å få en reel effekt. Initiativer innen åpen vitenskap og nye verktøy peker i riktig retning [@dudda; @nosek2015], men det gjenstår et betydelig arbeid for å etablere en forkningskultur som er både robust og pålitelig.
 
 ## References
 <div id="refs"></div>
 
-<!-- ## Notes -->
-
-<!-- 1. Reproduserbarhet -->
-
-<!-- “Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusions. Recently, the scientific community was shaken by reports that a troubling proportion of peer-reviewed preclinical studies are not reproducible”.[@mcnutt2014] -->
-
-<!-- 2. Replicability and Reproducibility -->
-
-<!-- “Replication—The confirmation of results and conclusions from one study obtained independently in another—is considered the scientific gold standard.”(Jasny et al. 2011) -->
-
-<!-- kan gjør ting på nytt med nye data, men fortsatt få det samme. -->
-
-<!-- Reproducibility is a necessary, but not sufficient, condition for Replicability. -->
-
-<!-- Peng mener at reproduserbarhet skal være nødvendig for å få lov til å publisere. -->
-<!-- Should Reproducibility be a minimal requirement for publication? (Peng (2011) discusses this with regard to Computational Science) -->
-
-<!-- 3. NSF: Robust and Reliable Science -->
-<!-- (Bollen et al. 2015) -->
-<!-- “robust and reliable” science refers to: research that is reproducible, replicable, and generalizable. -->
-
-<!-- Reproducibility refers to: the ability of a researcher to duplicate the results of a prior study using the same materials and procedures used by the original investigator. -->
-
-<!-- Replicability refers to: the ability of a researcher to duplicate the results of a prior study if the same procedures are followed but new data are collected. -->
-
-<!-- Generalizability refers to: whether the results of a study apply in other contexts or populations that differ from the originals. -->
-
-<!-- 5. What is research reproducibility? -->
-<!--  (Goodman, Fanelli, and Ioannidis 2016) -->
-<!-- - et forsøk på å definere enda grundigere, og mer opp imot bivitenskap -->
-
-<!-- Methods reproducibility: “Methods reproducibility refers to the provision of enough detail about study procedures and data so the same procedures could, in theory or in actuality, be exactly repeated.” -->
-
-<!-- Results reproducibility: “Results reproducibility (previously described as replicability) refers to obtaining the same results from the conduct of an independent study whose procedures are as closely matched to the original experiment as possible.” -->
-
-<!-- Robustness and generalizability: “We briefly introduce these terms because they are sometimes used in lieu of the term reproducibility. Robustness refers to the stability of experimental conclusions to variations in either baseline assumptions or experimental procedures. It is somewhat related to the concept of generalizability (also known as transportability), which refers to the persistence of an effect in settings different from and outside of an experimental framework.” -->
-
-<!-- 6. Publication bias -->
-
-<!-- Om en studie skal bli publisert kan være avhengi av konklusjonen av studien. -->
-<!-- - Det er få publiserte studier som har en negativ konklusjon. -->
-<!-- - f.eks : Denne behandlingen har ingen effekt -->
-<!-- I verste fall: forsknings artikkler er bare en stor samling av type 1 error -->
-<!--   Type 1 error: forkaster H0 = når H0 = er sant -->
-<!--   H0 er ofte den konsevative hypotesen, "ingen effekt" -->
-<!-- Med en alpha = 0,05 vil vi forkaste H0 1 av 20ganger selv om H0 er sant. -->
-<!--   «Det vil si, vi konkluderer med at det finnes en effekt når det i virkeligheten ikke gjør det (alt       sammen fordi vi var uheldige – eller kanskje heldige, dersom vi ønsker å bli publisert – og fikk et      uheldig utvalg). -->
-<!--     Så selv om det finnes 100 lignende studier som ikke finner noen effekt, er det en risiko for at det      er den feilaktige du vil komme over i litteraturen. Dette kalles ofte ‘skuffeproblemet’ (File Drawer     Problem), etter Rosenthal (1979). -->
-
-<!-- (Simmons, Nelson og Simonsohn, 2011) -->
-<!-- Kanskje den mest kostbare feilen er et falskt positivt funn, altså en feilaktig forkastelse av en nullhypotese. -->
-
-<!-- For det første, når de først dukker opp i litteraturen, er falske positive spesielt seiglivede. -->
-<!-- Fordi nullresultater kan ha mange mulige årsaker, er mislykkede forsøk på å replikere tidligere funn aldri avgjørende. -->
-
-<!-- I tillegg, fordi det er uvanlig at prestisjetunge tidsskrifter publiserer nullfunn eller eksakte replikasjoner, har forskere liten motivasjon til å engang forsøke det. -->
-
-<!-- For det andre sløser falske positive med ressurser: De inspirerer til investering i resultatløse forskningsprogrammer og kan føre til ineffektive politiske endringer. -->
-
-<!-- Til slutt risikerer et fagfelt som er kjent for å publisere falske positive å miste sin troverdighet.» (Simmons, Nelson og Simonsohn, 2011) -->
-
-<!-- 9. Publication bias and meta-analysis -->
-
-<!-- Tar for seg mange artikkler innen et område og prøver å finne en sammenfatning om det generelle svaret. -->
-<!--   publication bias vil også ha betydning for meta-analyse -->
-
-<!-- “More alarming is the general paucity in the literature of negative data. In some fields, almost all published studies show formally significant results so that statistical significance no longer appears discriminating” (Young, Ioannidis, and Al-Ubaydli 2008) -->
-
-<!-- 10. The Replication Crisis -->
-
-<!-- Startet i psykologi, men har spredt seg raskt til de andre feltene innefor forskning. -->
-
-<!-- Simmons, Nelson, and Simonsohn (2011) “proves” that you will get, or at least feel, younger by listening to “When I’m Sixty-Four” by The Beatles. -->
-
-<!-- Simmons, Nelson, and Simonsohn (2011) -->
-<!--   Etter at de "beviste" artiklen om at man blir yngere ved å høre på "when im sixty-four" av The Beatles,   kom de med en løsning for å ungå at slike forskningsartikkler ikke skulle komme gjennom. -->
-<!--     De kom med en list for både forfattere (6) og redaktørene(4). -->
-
-<!-- Why Most Published Research Findings Are False Ioannidis (2005) -->
-<!--   “There is increasing concern that in modern research, false findings may be the majority or even the     vast majority of published research claims [6–8]. However, this should not be surprising. It can be      proven that most claimed research findings are false.” -->
-
-<!-- Again, and again, and again Jasny et al. (2011) -->
-
-<!-- 12. Big replication studies in psychology -->
-
-<!-- Estimating the reproducibility of psychological science Brian A. Nosek and et al (2015) -->
-<!--   - 270 forskre ble etterforsket -->
-<!--   - Forsøkte å replikere 100 studier fra de siste 3 årene hentet fra 3 av de mest anerkjente                 tidsskriftene   i feltet. -->
-<!--   - Resultater: Replikasjonseffektene var halvparten så store som de opprinnelige effektene. -->
-<!--   - Resultater: Nittisju prosent av de opprinnelige studiene hadde signifikante resultater (p < .05).        Trettiseks prosent av repliksjonene hadde signifikante resultater. -->
-<!--   - Resultater: Oppsummert, en stor andel av replikasjonene gjenskapte ikke bevis som støttet de             opprinnelige funnene, til tross for bruk av høyeffektive design og originalt materiale når det var       tilgjengelig. -->
-
-<!-- Many labs 2: Investigating variation in replicability across samples and settings Klein et al. (2018). See Collaboration (2015) for abstract. -->
-
-<!-- “We conducted preregistered replications of 28 classic and contemporary published findings, with protocols that were peer reviewed in advance, to examine variation in effect magnitudes across samples and settings.” -->
-
-<!-- “Using the conventional criterion of statistical significance (p < .05), we found that 15 (54%) of the replications provided evidence of a statistically significant effect in the same direction as the original finding.” -->
-
-
-<!-- 15. What about economics? -->
-
-<!-- Good intentions! (Frisch 1933) -->
-
-<!-- 1960, big economic models -->
-<!--   Difficult to move from one mainframe to another -->
-<!--   Only results published, replication/reproduction nearly impossible -->
-
-<!-- 16. The JMCB project (1982) -->
-<!-- 1982 The Journal of Money, Credit and Banking Project (NSF sponsored) -->
-<!-- - Replikasjon (med innsendte datasett), altså i moderne forstand mer et forsøk på å teste                  reproduserbarhet. -->
-<!-- - Resultater: Lyktes med full replikasjon for 2 av over 70. -->
-<!-- - Resultater: Noen flere ga nesten de opprinnelige resultatene. -->
-<!-- - Resultater: Mange var umulige å replikere på grunn av manglende data, feil i dataprogrammer, manglende   dokumentasjon osv. -->
-<!-- - Mange forfattere ignorerte rett og slett forespørselen om data og kode. -->
-
-<!-- “It would be embarrassing to reveal the findings of the Project save for our belief that the findings would be little different from any other major economics journal” -->
-
-<!-- 18. “The Solution” -->
-<!-- Code and data archives at the journals -->
-
-<!-- American Economic Association data archive, (“American Economic Association,” n.d. ) -->
-
-<!-- Virket denne løsningen? -->
-<!-- Do economics journal archives promote replicable research? (McCullough, McGeary, and Harrison 2008) -->
-
-<!-- "Abstract. All the long-standing archives at economics journals do not facilitate the re-production of published results. The data-only archives at Journal of Business and Economic Statistics and Economic Journal fail in part because most authors do not contribute data. Results published in the FRB St. Louis Review can rarely be reproduced using the data+code in the journal archive." -->
-
-<!-- 19. “Extension of the solution” -->
-<!-- Research Objects, (Bechhofer et al. 2013) -->
-<!-- “Research Objects, semantically rich aggregations of resources that provide the “units of knowledge” which supply structure for delivery of information as Linked Data.” -->
-
-<!-- DataCite - A global registration agency for research data, Brase (2009) -->
-<!--   International co-operations to register data sets and give them a unique DOI (Document Object            Indentifier) -->
-
-<!-- EU initiative Access to and Preservation of Scientific Information in Europe: Report on the Implementation of Commission Recommendation C(2012) 4890 Final. (2015) -->
-<!-- “This report provides an overview on access to and preservation of scientific information in the EU Member States as well as Norway and Turkey.” -->
-
-<!-- 20. Another solution, “computable documents” -->
-
-<!-- What if the code is an integral part of the article? -->
-<!-- What is to be sent to the Journal is: -->
-<!-- - one document containing the text and -->
-<!-- - the code to read in the data and -->
-<!-- - the code to calculate the different models and -->
-<!-- - the code to test them and -->
-<!-- - the code to report the results. -->
-<!-- What would be submitted would be, together with the data, a fully reproducible document -->
-
-<!-- 21. Another solution, “computable documents” -->
-
-<!-- The main idea is often attributed to Donald E. Knuth (1992), although Knuth explicitly points out that it was not his idea (D. E. Knuth 1984) -->
-<!--   Knuths main goal seems to be to improve the quality of the program documentation (and indirectly the     quality of the code) with WEB. -->
-
-<!-- 22. Another solution, “computable documents”  -->
-<!-- “In the mid 1980’s, researchers at our laboratory noticed that a few months after completing a project, the researchers were usually unable to reproduce their own computational work without considerable agony. In 1991, the concept of electronic documents solved this problem by making scientific computations reproducible.”(Schwab, Karrenbach, and Claerbout 1995) -->
-<!--   unix makefiles -->
-
-<!-- Connection between code and reproducibility. All code necessary to generate figures freely avaiable (WaveLab a Matlab (Matlab is proprietary software) library).(Buckheit and Donoho 1995) -->
-
-<!-- 23. Another solution, “computable documents” -->
-<!-- “It is important, if not essential, to integrate the computations and code used in data analyses, methodological descriptions, simulations, and so on with the documents that describe and rely on them.” (Gentleman and Lang 2007) -->
-
-<!-- “We introduce the concept of a compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data, …), and as a means for distributing, managing and updating the collection.” -->
-
-<!-- “The step from disseminating analyses via a compendium to reproducible research is a small one. By reproducible research, we mean research papers with accom- panying software tools that allow the reader to directly reproduce the results and employ the methods that are presented in the research paper.” -->
-
-<!-- “a compendium has one, or more, self-contained live documents that can be regenerated in absolute detail by others, and that can often be used in contexts other than the author’s original work.” -->
-
-<!-- “We define a dynamic document as an ordered composition of code chunks and text chunks that describe and discuss a problem and its solution. The ordering of the chunks need not be simply sequential but can support rich and complex document structures.” -->
-
-<!-- “The mechanism or system used to transform a dynamic document into some desired output or view will be called a transformer.” -->
-
-<!-- In Gentleman (2005) parts of Golub et al. (1999) is reproduced as a computable compendium. -->
-
-<!-- 25. Implementations I -->
-<!-- Sweave, executable code (R or Splus) in LaTex documents, (Leisch 2002) -->
-<!--   Er forgjengeren til knitr -->
-<!-- Knitr, (Xie 2014), (Xie 2015) and (Xie 2020) -->
-<!--   R code in LaTex documents (like Sweave), but also support for R Markdown (Allaire et al. 2020),          (Tierney, n.d.), (Xie, Allaire, and Grolemund 2018) and (Riederer, n.d.) -->
-<!--   Markdown Gruber and Swartz (n.d.), plain text with simple markup. Intended for Grubers web site. -->
-<!--   R Markdown, markdown with R code-chuncks -->
-<!-- RStudio (RStudio Team 2020), IDE for R supporting R Markdown and knitr -->
-
-<!-- 26. Implementations II -->
-<!-- R Notebook, document type supported by RStudio that implements a notebook interface, i.e. output is returned to the notebook when it is run -->
-<!--   Code should be run sequentially, but each code-chunck can be run individually. -->
-<!--   Support LaTex code for mathematical typesetting. -->
-<!--   pandoc, (“Pandoc - Pandoc User’s Guide,” n.d. ), functions as the transformer (from Gentleman and Lang     (2007)) and can transform a R Markdown document into many different formats, including MS Word, html     and pdf (via LaTex). -->
-
-<!-- Introductory books on R, (Lander 2017) and Data Science, (Grolemund and Wickham, n.d.) often includes chapters on how to write dynamic computable documents in R Studio -->
-
-<!-- 27. Implementations III -->
-<!-- Quarto documents -->
-<!--   The updated and more robust version of R Notebook/.Rmd documents -->
-<!--   Still uses pandoc, output to html, pdf, docx and other formats -->
-<!--   Supports LaTeX for mathematics -->
-<!--   Support Zotero/BiBTeX for citations and references -->
-<!--   R-code in code-chuncks -->
 
 
 
