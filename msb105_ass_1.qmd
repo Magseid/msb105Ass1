@@ -17,7 +17,7 @@ format:
     fig-pos: "H"
 bibliography: 
 - msb105_kilder.bib
-- reproducibility1.bib
+- reproducibility.bib
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
 ---
 ## Introduction
@@ -44,10 +44,16 @@ Meta-analyser, som har som mål å gi et samlet bilde av forskningsstatus, ramme
 
 Denne dynamikken har strukturelle årsaker. @smaldino2016 argumenterer for at dagens insentivsystemer i realiteten fremmer "dårlig vitenskap": Forsknere blir i større grad belønnet for kvantiteten av signifikante funn enn for metodisk grundighet eller vilje til å replikere tidligere resultater. Dermed blir publikasjonsbias ikke bare en konsekvens av individuelle valg, men et mønster som formes av selve forskningssystemets belønningsmekanismer.
 
-### Empirisk dokumentasjon av problemet
+### Dokumenterte funn om replikasjon
+@ioannidis2005b argumenterte tidlig for at majoriteten av publiserte forskningsfunn sannsyneligvis er falske, basert på metododiske svakheter, lav statistisk styrke og bias. Denne bekymringen ble senere empirisk dokumentert gjennom @opensciencecollaboration2015b, som forsøkte å replikere 100 psykologiske studier. Av disse studiene var det kun 36% som ga signifikante resultater, og effektstørrelsen var betydelig redusert. @nosek2015 understøtter disse funnene og peker på at mangel på transparens og deling av data er sentrale årsaker.
 
+@klein2018b gjennomførte "Many Labs 2" prosjektet, hvor 28 klassiske og nyere psykologiske funn ble forsøkt replikertr på tvers av ulike utvalg og settinger. Resultatene viste at bare litt over halvparten av forsøkene resulterte i signifikante effekter i samme retnings som den orginale studien. Dette viser at selv når funn kan bekreftes, fremstår de ofte som svakere enn først rapportert.
 
+@camerer2018 fant lignene mønstre i sin evaluering av 21 samfunnsvitnskapelige eksperimener publisert i *Nature* og *Science* mellom 2010 og 2015. Omtrent 62% av studiene kunne replikeres, men effektene var i snitt om lag 50% mindre enn i de opprinnelige artiklene. Disse resultatene er særlig oppsiktsvekkende ettersom at de gjelder studier fra de mest prestisjetunge tidsskriftene. Når selv forsknings som setter standarden for kvalitet og innflytelse viser begrenset replikerbarhet, understrekes alvoret i utfordingen for vitenskapelig pålitelighet.
 
+Innen økonomi viste JMCB-prosjektet på 1980-tallet at bare 2 av 70 analyser kunne reproduseres fullt ut [@dewald1986b]. @mccullough2008a viste senere at selv tidsskrifter med dataarikiv ikke nødvendigvis ikke oppnår reproduserbarhet, fordi forfattere ofte leverer mangelfull kode og dokumentasjon. Dette peker på at tekniske løsninger som dataarkiv ikke er tilstrekkelie alene.
+
+### Løsninger: Åpen vitenskap og tekniske rammeverk
 
 
 <!-- Smart stuff from others about the topic. -->
