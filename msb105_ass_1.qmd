@@ -54,6 +54,11 @@ Denne dynamikken har strukturelle årsaker. @smaldino2016 argumenterer for at da
 Innen økonomi viste JMCB-prosjektet på 1980-tallet at bare 2 av 70 analyser kunne reproduseres fullt ut [@dewald1986b]. @mccullough2008a viste senere at selv tidsskrifter med dataarikiv ikke nødvendigvis ikke oppnår reproduserbarhet, fordi forfattere ofte leverer mangelfull kode og dokumentasjon. Dette peker på at tekniske løsninger som dataarkiv ikke er tilstrekkelie alene.
 
 ### Løsninger: Åpen vitenskap og tekniske rammeverk
+For å møte disse utfordringene med lav reproduserbarhet og replikerbarhet er det foreslått en rekke tiltaltak. Open science-initiativer, som preregistreing og obligatorisk deling av data og kode, er blant de mest utbredte [@nosek2015]. @dudda viser i en bred kartlegging at ulike intervasjoner er tatt i bruk, men at kunnskapsgrunnlaget for hvor effektive de faktisk er, fortsatt er begrenset. @chakravorti2025 peker samtidig på at oppfatningen av hva reproduserbarhet innebærer varierer betydelig mellom land og fagfelt, og at både insentiver og ressurstilgang gjør enhetlige standarder vanskelig å etablere.
+
+På den tekniske siden har et konseptet *computable documents* hatt stor innflytelse. Allerede på 1980-tallet introduserte @knuth1984b ideen om *literate programming*, hvor kode og forklarende tekst integreres for å gjøre programmer mer forståerlige og vedlikeholdbare. Denne tankegangen ble viderført av @gentleman2007b, som lanserte ideen om *compendia* og *dynamic documents* - rammeverk som gjør det mulig å samle kode, data og beskrivelser i en helhetlig enhet for å sikre transparens.
+
+Slike ideer ble etterhvert gjort praktiske gjennom verktøy som sweave [@leisch2002], knitr [@xie2014b] og R Markdown [@allaire2020b], som åpnet for at analyser og tekst kunne integreres i ett dynamisk dokument. Quarto [@allaire2024a] representerer den nyeste videreutviklingen, med støtte for flere programmeringsspråk og formater, samt innebygget håndtering av referanser. I følge @ziemann2023 bygger beregningsreproduserbahet på fem sentrale "søyler": åpen datadeling, kodedeling, dokumentasjon, standardisering og bruk av åpne plattformer. Dette er prinsipper som verktøy som Quarto i stor grad kan understøtte.
 
 
 <!-- Smart stuff from others about the topic. -->
