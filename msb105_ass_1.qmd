@@ -62,21 +62,25 @@ For å møte disse utfordringene med lav reproduserbarhet og replikerbarhet er d
 På den tekniske siden har et konseptet *computable documents* hatt stor innflytelse. Allerede på 1980-tallet introduserte @knuth1984b ideen om *literate programming*, hvor kode og forklarende tekst integreres for å gjøre programmer mer forståerlige og vedlikeholdbare. Denne tankegangen ble viderført av @gentleman2007b, som lanserte ideen om *compendia* og *dynamic documents* - rammeverk som gjør det mulig å samle kode, data og beskrivelser i en helhetlig enhet for å sikre transparens.
 
 Slike ideer ble etterhvert gjort praktiske gjennom verktøy som sweave [@leisch2002], knitr [@xie2014b] og R Markdown [@allaire2020b], som åpnet for at analyser og tekst kunne integreres i ett dynamisk dokument. Quarto [@allaire2024a] representerer den nyeste videreutviklingen, med støtte for flere programmeringsspråk og formater, samt innebygget håndtering av referanser. I følge @ziemann2023 bygger beregningsreproduserbahet på fem sentrale "søyler": åpen datadeling, kodedeling, dokumentasjon, standardisering og bruk av åpne plattformer. Dette er prinsipper som verktøy som Quarto i stor grad kan understøtte.
-
->>>>>>> Litteratur
-
 <!-- Smart stuff from others about the topic. -->
 <!-- Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file). -->
 <!-- Use both in-line and normal citations. -->
 
-## Discussion of the reseach question
+## Diskusjon av forskningsspørsmål
+Replikerbarhet løftes ofte fram som vitenskapens gullstandard [@jasny2011b]. Likevel er det urealistisk å gjøre replikerbarhet til normen i alle fagfelt, gitt kostnadene og mangel på insentiver. Flere har derfor foreslått å se på reproduserbarhet som et minimumskravfor publisering, mens replikerbarhet forbeholdes studier med særlig stor betydning [@maxwell2015a; @peng2011].
+
+Quarto kan spille kan spille en viktig rolle i å styrke reproduserbarhet ved å kombinere tekst, kode, data og referanser i ett dokument. Dette gir en mer transparent arbeidsflyt og gjør analyser lettere å etterprøve.
+
+Samtidig gjenstår flere utfordringer. Insentivsystemet i akademia belønner først og fremst nye og signifikante funn, noe som svekker motivasjonen for replikasjonsstudier [@simmons2011; @smaldino2016a]. I tillegg viser @chakravorti2025 at forståelsen av reproduserbarhet varier mellom kntekster, noe som gjår at standardisering kan være krevende.
 
 <!-- -   Should replicability be the norm or is this to much to ask for now? -->
 <!-- -   Can Quarto documents help with reproducibility? -->
 <!-- -   What problems remains and how can these be solved? -->
 
-## Conclusion
+## Konklusjon
+Reproduserbarhet og replikerbarhet er avgjørende for vitenskapens troverdighet. Et realistisk mål er å gjøre reproduserbarhet til publikasjonskrav, mens replikasjon oppmuntres i utvalgte tilfeller.
 
+Tekniske rammverks som Quarto kan bidra til mer transparente og etterprøvbare arbeidsprosesser, men de må kombineres med insentiver og opplæring for å få en reel effekt. Initiativer innen åpen vitenskap og nye verktøy peker i riktig retning [@dudda; @nosek2015], men det gjenstår et betydelig arbeid for å etablere en forkningskultur som er både robust og pålitelig.
 
 ## References
 <div id="refs"></div>
