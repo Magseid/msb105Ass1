@@ -1,0 +1,24 @@
+---
+title: "ag Kommentarer"
+format: 
+  html: default
+  pdf:
+    papersize: a4
+  typst:
+    papersize: a4
+---
+
+## Generelle
+
+- Et flott stykke arbeid. Fin litteraturgjennomgang og diskusjon. 
+- Artig at du skrev på norsk. Jeg har gjort noen mindre rettinger av «typos» i teksten
+
+## Fikser og tips
+
+- For å få norsk orddeling for pdf må du gi følgende kommando i Console: tinytex::tlmgr_install("hyphen-norwegian")
+- Dette bygger en ny latex format fil som innholder regler for norsk orddeling.
+- Den automatiske rutinen for dette i tinytex ser ut til å svikte. Du trenger bare gi kommandoen tlmgr_install() hver gang du installerer tinytex.
+- Merk at pdf (latex) og typst har litt forskjellig ordeling. Begge ser ut til å gi OK resultat.
+- For å kunne ha flere bib-filer og liste dem som for pdf må følgende legges til YAML `citeproc: true`. Tvinger `typst` til å bruke `bibtex` i steden for sitt eget system.
+- Endret i reproducibility.bib fra year = {30.aug.2005} til year = {2005} for ioannidis2005b
+

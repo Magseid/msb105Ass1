@@ -4,29 +4,37 @@ author: "Magnus Eidesmo"
 date: last-modified
 date-format: "dddd D MMM, YYYY"
 csl: apa7.csl
-lang: nb-NO
+lang: nb_NO
+papersize: a4
 format:
   html: default
-  typst:
-    papersize: a4
+  typst: 
+# Change default font
+    mainfont: "Cambria"
   pdf:
     documentclass: article
+# Change default font
+#    mainfont: "Times"
     number-sections: true
     keep-tex: true
-    papersize: A4
     fig-pos: "H"
+#for å få typst til å bruke bibtex
+#ellers virker ikke å ha flere .bib filer
+citeproc: true
 bibliography: 
 - msb105_kilder.bib
 - reproducibility.bib
-abstract: "Vitenskapelig troverdighet avhenger av forskningens evne til å lever pålitelige og etterprøvbare resultater. Den pågående replikasjonskrisen har vist at mange studier, særlig innen psykologi, medisin og samfunnsvitenskap, ikke lar seg reprodusere eller replikere, noe som svekker tillititen til vitenskapen. Manglende reproduserbarhet og publikasjonsbias bidrar til et skjevt kunnskapsgrunnlag, der falske positive og overraporterte funn får dominere. Denne oppgaven drøfte forskjellen mellom reproduserbarhet og replikerbarhet, samt hvordan tiltak som åpen vitenskap, bedre incentivsystemer og teknologiske verktøy som Quarto kan styrke forskningspraksis. Det argumenteres for at reproduserbarhet bør være et minimumskrav for publisering, mens replikasjon oppmuntres for studier med stor betydning. Selv om nye rammeverk gir bedre forutsetninger for transparens, kreves det fortsatt strukturelle endringer for å bygge en mer robust og pålitelig forskningskultur."
+abstract: "Vitenskapelig troverdighet avhenger av forskningens evne til å lever pålitelige og etterprøvbare resultater. Den pågående replikasjonskrisen har vist at mange studier, særlig innen psykologi, medisin og samfunnsvitenskap, ikke lar seg reprodusere eller replikere, noe som svekker tillititen til vitenskapen. Manglende reproduserbarhet og publikasjonsbias bidrar til et skjevt kunnskapsgrunnlag, der falske positive og overraporterte funn får dominere. Denne oppgaven vil drøfte forskjellen mellom reproduserbarhet og replikerbarhet, samt hvordan tiltak som åpen vitenskap, bedre incentivsystemer og teknologiske verktøy som Quarto kan styrke forskningspraksis. Det argumenteres for at reproduserbarhet bør være et minimumskrav for publisering, mens replikasjon oppmuntres for studier med stor betydning. Selv om nye rammeverk gir bedre forutsetninger for transparens, kreves det fortsatt strukturelle endringer for å bygge en mer robust og pålitelig forskningskultur."
 ---
 ## Introduction
-Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@ioannidis2005b; @opensciencecollaboration2015]. Dette kan få alvorlige følger - fra bortkastede forskningressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
+Vitenskapelig troverdighet bygger på dens evne til å levere pålitelige resultater som andre kan etterprøve. Som @mcnutt2014 uttrykker det: *"Science advances on a foundation of trusted discoveries. Reproducing an experiment is one important approach that scientists use to gain confidence in their conclusion."* Når forskning ikke lar seg gjenskape, undergraves denne tilliten. Den såkalte replikasjonskrisen har vist at store deler av forskning innen psykologi, medisin og samfunnsvitenskap ikke kan replikeres [@opensciencecollaboration2015; @ioannidis2005b]. Dette kan få alvorlige følger - fra bortkastede forskningressurser til redusert tillit til vitenskapelige anbefalinger, og ikke minst faren for at feilaktige resultater etableres som kunnskapsgrunnlag [@simmons2011].
 
 Denne oppgaven diskuterer hvordan begrepene reproduserbarhet og replikerbarhet kan forstås, hvorfor de er avgjørende for vitenskapens pålitelighet, og hvilke tiltak som kan styrke forskningspraksissen. Det legges særlig vekt på spørsmålet om replikasjon bør være en norm, hvordan teknologiske verktøy som Quarto kan fremme reproduserbarhet, og hvilke utfordringer som fortsatt gjenstår
 
-## Literature review
+## Literaturstudie
+
 ### Reproduserbarhet og Replikerbarhet
+
 Et sentralt skille i forskningdiskusjonene er mellom **reproduserbarhet** og **replikerbarhet**. @bollen2015 definerer reproduserbarhet som muligheten for å gjenskape resultater med de samme data og metoden, mens replikerbarhet innebærer å teste en studie ved å bruke nye data, men med samme metode. @committeeonreproducibilityandreplicabilityinscience2019a tydeliggjør dette skillet ytterliger, og argumenterer for at begge dimensjoner må være til stede for at forskning skal være pålitelig. @goodman2016b skiller i tillegg mellom *"methods reproducibility, results reproducibility* og *robustness/generalizability",* noe som viser at begrepet favner flere nivåer.
 
 @peng2011 fremhever at reproduserbarhet burde være et minimumskrav for å kunne publisere i beregningsorienterte fag, på grunn av at full replikasjon ofte er urealistisk. @jasny2011b går enda lengre og omtaler replikerbarhet som vitenskapens "gullstandard". Dette støttes videre av @maxwell2015a , som viser hvordan manglende replikasjon undergraver fagfeltets kumulative kunnskapsutvikling.
