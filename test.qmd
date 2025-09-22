@@ -1,0 +1,25 @@
+---
+title: ""
+author: ""
+date: ""
+fontsize: 11pt
+lang: nb-NO
+format:
+  pdf:
+    papersize: a4
+  typst:
+    papersize: a4
+---
+
+```{r}
+library(tinytex)
+options(tinytex.verbose = TRUE)
+options(tinytex.clean = FALSE)
+# if (!dir.exists('~/.TinyTeX')) {
+#   install_tinytex()
+# }
+# 
+# Sys.getenv("PATH")
+```
+
+Sjekker om vi har norsk ordeling: Vitenskapelig troverdighet avhenger av forskningens evne til å lever pålitelige og etterprøvbare resultater. Den pågående replikasjonskrisen har vist at mange studier, særlig innen psykologi, medisin og samfunnsvitenskap, ikke lar seg reprodusere eller replikere, noe som svekker tillititen til vitenskapen. Manglende reproduserbarhet og publikasjonsbias bidrar til et skjevt kunnskapsgrunnlag, der falske positive og overraporterte funn får dominere. Denne oppgaven drøfte forskjellen mellom reproduserbarhet og replikerbarhet, samt hvordan tiltak som åpen vitenskap, bedre incentivsystemer og teknologiske verktøy som Quarto kan styrke forskningspraksis. Det argumenteres for at reproduserbarhet bør være et minimumskrav for publisering, mens replikasjon oppmuntres for studier med stor betydning. Selv om nye rammeverk gir bedre forutsetninger for transparens, kreves det fortsatt strukturelle endringer for å bygge en mer robust og pålitelig forskningskultur.
